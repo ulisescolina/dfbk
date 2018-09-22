@@ -1,0 +1,309 @@
+# Vim 8.1 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Viminfo version
+|1,4
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Último Patrón de búsqueda:
+~MSle0~/scrip
+
+# Última cadena de sustitución:
+$
+
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:q
+|2,0,1537623650,,"q"
+:w
+|2,0,1537623648,,"w"
+:q!
+|2,0,1537621830,,"q!"
+:.q
+|2,0,1537621807,,".q"
+:tabe algo.txt
+|2,0,1537621764,,"tabe algo.txt"
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? \s\+$
+|2,1,1537623648,,"\\s\\+$"
+?/scrip
+|2,1,1537623471,47,"scrip"
+?/mod
+|2,1,1537618024,47,"mod"
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Historia de Debug Line (de lo más nuevo a lo más antiguo):
+
+# Registros:
+
+# Marcas en el archivo:
+'0  2  6  /tmp/bash-fc.lmmQyY
+|4,48,2,6,1537623650,"/tmp/bash-fc.lmmQyY"
+'1  1  0  ~/.bashrc
+|4,49,1,0,1537623544,"~/.bashrc"
+'2  40  82  ~/.bashrc
+|4,50,40,82,1537623442,"~/.bashrc"
+'3  40  82  ~/.bashrc
+|4,51,40,82,1537623442,"~/.bashrc"
+'4  1  0  ~/.config/i3/config
+|4,52,1,0,1537622023,"~/.config/i3/config"
+'5  57  13  ~/.config/i3blocks/config
+|4,53,57,13,1537621830,"~/.config/i3blocks/config"
+'6  1  0  ~/.bashrc
+|4,54,1,0,1537621646,"~/.bashrc"
+'7  1  0  ~/.bashrc
+|4,55,1,0,1537621646,"~/.bashrc"
+'8  1  0  ~/.bashrc
+|4,56,1,0,1537621646,"~/.bashrc"
+'9  1  0  /tmp/bash-fc.IJOUwc
+|4,57,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+
+# Lista de saltos (el más reciente va primero):
+-'  2  6  /tmp/bash-fc.lmmQyY
+|4,39,2,6,1537623650,"/tmp/bash-fc.lmmQyY"
+-'  1  0  /tmp/bash-fc.lmmQyY
+|4,39,1,0,1537623624,"/tmp/bash-fc.lmmQyY"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537623544,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537623544,"~/.bashrc"
+-'  40  82  ~/.bashrc
+|4,39,40,82,1537623442,"~/.bashrc"
+-'  40  82  ~/.bashrc
+|4,39,40,82,1537623442,"~/.bashrc"
+-'  40  82  ~/.bashrc
+|4,39,40,82,1537623442,"~/.bashrc"
+-'  40  82  ~/.bashrc
+|4,39,40,82,1537623442,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537622984,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537622984,"~/.bashrc"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1537622023,"~/.config/i3/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  57  13  ~/.config/i3blocks/config
+|4,39,57,13,1537621830,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.config/i3blocks/config
+|4,39,1,0,1537621658,"~/.config/i3blocks/config"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1537621646,"~/.bashrc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+-'  1  0  /tmp/bash-fc.IJOUwc
+|4,39,1,0,1537621432,"/tmp/bash-fc.IJOUwc"
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> /tmp/bash-fc.lmmQyY
+	*	1537623645	0
+	"	2	6
+	^	2	7
+	.	2	6
+	+	2	6
+
+> ~/.bashrc
+	*	1537623544	0
+	"	1	0
+
+> ~/.config/i3blocks/config
+	*	1537621828	0
+	"	57	13
+	^	57	14
+	.	58	0
+	+	58	0
+
+> ~/.config/i3blocks/algo.txt
+	*	1537621808	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	2	14
+	+	3	0
+
+> /tmp/bash-fc.IJOUwc
+	*	1537621431	0
+	"	1	0
+
+> /tmp/bash-fc.3tXtep
+	*	1537621408	0
+	"	1	0
+
+> ~/.xinitrc
+	*	1537618069	0
+	"	1	0

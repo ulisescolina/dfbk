@@ -1,0 +1,13 @@
+Sep 22 08:50 : exception: Failed to open /home/urc/.config/mpd/state: No such file or directory
+Sep 22 08:50 : exception: Failed to access /home/urc/Music: No such file or directory
+Sep 22 08:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 22 08:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 22 08:55 : client: [0] opened from 127.0.0.1:52904
+Sep 22 08:55 : client: [1] opened from 127.0.0.1:52908
+Sep 22 08:55 : client: [0] closed
+Sep 22 09:33 : client: [2] opened from 127.0.0.1:54450
+Sep 22 09:33 : client: [2] closed
+Sep 22 10:19 : client: [3] opened from 127.0.0.1:55294
+Sep 22 10:19 : client: [3] closed
+Sep 22 10:19 : client: [4] opened from 127.0.0.1:55300
+Sep 22 10:19 : client: [4] closed
