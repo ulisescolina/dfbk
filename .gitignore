@@ -3,6 +3,8 @@
 .config/pulse/
 .local/share/xorg/
 .mozilla/
+.bash_history
 .viminfo
+.weatherreport
 
 
