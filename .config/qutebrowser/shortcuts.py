@@ -6,3 +6,4 @@ config.bind(";pp", "set downloads.location.directory ~/Pictures ;; hint links do
 config.bind(";vv", "set downloads.location.directory ~/Videos ;; hint links download")
 config.bind(";s", "set downloads.location.directory ~/.scripts ;; hint links download")
 config.bind(";cf", "set downloads.location.directory ~/.config ;; hint links download")
+config.bind(";usb", "set downloads.location.directory /extraibles ;; hint links download")

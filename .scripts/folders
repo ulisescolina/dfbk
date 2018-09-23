@@ -7,3 +7,4 @@ pp	~/Pictures
 vv	~/Videos
 s	~/.scripts
 cf	~/.config
+usb	/extraibles # Carpeta donde se montan los dispositivos extraibles
