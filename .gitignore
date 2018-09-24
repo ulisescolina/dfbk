@@ -1,10 +1,12 @@
-.cache/
-.config/mpd/
+.cache/*
+.config/mpd/log
+.config/mpd/pid
 .config/pulse/
-.local/share/xorg/
-.mozilla/
+.local/share/xorg/*
+.mozilla/*
 .bash_history
 .viminfo
+.python_history
 .weatherreport
 
 
