@@ -9,6 +9,7 @@
 .config/mpd/state
 .config/mpd/sticker.sql
 .config/pulse/
+.gnupg/
 .local/share/
 .mozilla/*
 .ncmpcpp/
@@ -23,7 +24,7 @@ Plantillas/
 .bash_history
 .lesshst
 .viminfo
-.python_history
+.python_history*
 .weatherreport
 
 
