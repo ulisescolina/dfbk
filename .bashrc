@@ -48,9 +48,10 @@ alias wifispeed="speedometer -r wlp3s0"
 alias starwars="telnet towel.blinkenlights.nl"
 
 # TeX
-alias Txa="cp ~/Documents/LaTeX/article.tex"
-alias Txs="cp ~/Documents/LaTeX/beamer.tex"
-alias Txh="cp ~/Documents/LaTeX/handout.tex"
+alias Txa="cp ~/Plantillas/LaTeX/article.tex"
+alias TxIEEE1="cp -r ~/Plantillas/LaTeX/IEEEArticle/*"
+alias TxIEEE2="cp -r ~/Plantillas/LaTeX/IEEEJrnl/*"
+alias Txs="cp ~/Plantillas/LaTeX/beamer.tex"
 alias TC='texclear'
 
 source ~/.shortcuts
