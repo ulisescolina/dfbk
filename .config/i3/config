@@ -265,7 +265,7 @@ for_window [title="Default - Wine desktop"] floating enable
 # First I have a tmux window used for background scripts.
 # I'll later bind this to mod+u.
 for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] resize set 1200 400
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 3
 # Runs the tmuxinit script, which searches for an earlier tmux instance,
@@ -283,7 +283,7 @@ exec --no-startup-id $term -n math -f mono:pixelsize=24 -e dropdowncalc
 # Ventana [flotante, oculta] corriendo ncmpcpp
 # asignado a $mod+m.
 for_window [instance="musica"] floating enable
-for_window [instance="musica"] resize set 800 300
+for_window [instance="musica"] resize set 1000 700
 for_window [instance="musica"] move scratchpad
 for_window [instance="musica"] border pixel 2
 exec --no-startup-id $term -n musica -e ncmpcpp
