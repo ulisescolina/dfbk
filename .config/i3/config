@@ -115,8 +115,8 @@ bindsym $mod+Shift+BackSpace	exec --no-startup-id prompt "Are you sure you want 
 bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec $truepause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e ranger
 
 # #---Letter Key Bindings---# #
-bindsym $mod+q			[con_id="__focused__" instance="^(?!math|dropdown).*$"] kill
-bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!math|dropdown).*$"] kill
+bindsym $mod+q			[con_id="__focused__" instance="^(?!math|dropdown|musica).*$"] kill
+bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!math|dropdown|musica).*$"] kill
 
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
@@ -194,7 +194,8 @@ bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id botto
 bindsym $mod+n			exec $term -e newspod
 ##bindsym $mod+Shift+n
 
-bindsym $mod+m 			exec --no-startup-id st -e ncmpcpp
+##bindsym $mod+m 			exec --no-startup-id st -e ncmpcpp
+bindsym $mod+m 			[instance="musica"] scratchpad show; [instance="musica"] move position center
 bindsym $mod+Shift+m		exec --no-startup-id lmc mute
 
 # #---Workspace Bindings---# #
@@ -278,6 +279,15 @@ for_window [instance="math"] resize set 800 300
 for_window [instance="math"] move scratchpad
 for_window [instance="math"] border pixel 2
 exec --no-startup-id $term -n math -f mono:pixelsize=24 -e dropdowncalc
+
+# Ventana [flotante, oculta] corriendo ncmpcpp
+# asignado a $mod+m.
+for_window [instance="musica"] floating enable
+for_window [instance="musica"] resize set 800 300
+for_window [instance="musica"] move scratchpad
+for_window [instance="musica"] border pixel 2
+exec --no-startup-id $term -n musica -e ncmpcpp
+#exec --no-startup-id termite -e ncmpcpp --name musica # version termite, error en i3
 
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
