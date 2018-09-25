@@ -13,20 +13,20 @@ command=i3mpd
 interval=once
 signal=11
 
-[pacman]
-label=📦
-command=i3pacman
-interval=once
-signal=8
+#[pacman]
+#label=📦
+#command=i3pacman
+#interval=once
+#signal=8
 
 [torrents]
 command=i3torrent
 interval=20
 signal=7
 
-[weather]
-command=i3weather
-interval=3600
+#[weather]
+#command=i3weather
+#interval=3600
 
 [mail]
 label=📬
@@ -55,5 +55,5 @@ interval=30
 
 [wifi]
 command=i3wifi
-instance=wlp2s0
+instance=wlp8s0
 interval=10
