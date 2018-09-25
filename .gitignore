@@ -3,6 +3,7 @@
 .config/mpd/pid
 .config/pulse/
 .local/share/xorg/*
+.local/share/zathura/history
 .mozilla/*
 .bash_history
 .viminfo
