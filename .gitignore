@@ -9,10 +9,12 @@
 .config/mpd/state
 .config/mpd/sticker.sql
 .config/pulse/
+.config/spotify/
 .gnupg/
 .local/share/
 .mozilla/*
 .ncmpcpp/
+.pki/
 .tmp/
 Documentos/
 Descargas/
