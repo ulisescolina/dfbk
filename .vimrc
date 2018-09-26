@@ -180,7 +180,7 @@ let mapleader =" "
 	autocmd FileType tex inoremap ,nu $\varnothing$
 	autocmd FileType tex inoremap ,col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 	autocmd FileType tex inoremap ,rn (\ref{})<++><Esc>F}i
-	autocmd FileType tex inoremap ,fig \begin{figure}[H]<Enter><Space><Space>\centering<Enter><Space><Space>\includegraphics[width=.4\linewidth]{<++>}<Enter><Space><Space>\caption{<++>}<Enter><Space><Space>\label{<++>}<Enter>\end{figure}<Esc>kkkkk<Space><Tab>
+	autocmd FileType tex inoremap ,fig \begin{figure}[H]<Enter><Space><Space>\centering<Enter><Space><Space>\includegraphics[width=.4\linewidth]{<++>}<Enter><Space><Space>\caption{<++>}<Enter><Space><Space>\label{<++>}<Enter>\end{figure}<Esc>kkkkki<Space><Tab>
 
 """PHP/HTML
 	autocmd FileType php,html inoremap ,b <b></b><Space><++><Esc>FbT>i
