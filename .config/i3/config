@@ -183,7 +183,7 @@ bindsym $mod+x			exec --no-startup-id lockscreen
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
 bindsym $mod+c			exec --no-startup-id camtoggle
-##bindsym $mod+Shift+c
+bindsym $mod+Shift+c		[class="Spotify"] scratchpad show; [class="Spotify"] move position center
 
 bindsym $mod+v			exec $term -e ncmpcpp -s visualizer
 bindsym $mod+Shift+v		exec --no-startup-id projectM-pulseaudio
@@ -288,6 +288,13 @@ for_window [instance="musica"] move scratchpad
 for_window [instance="musica"] border pixel 2
 exec --no-startup-id $term -n musica -e ncmpcpp
 #exec --no-startup-id termite -e ncmpcpp --name musica # version termite, error en i3
+
+# App Spotify como ventana oculta y flotante
+# asignado a $mod+shift+c.
+for_window [class="Spotify"] floating enable
+for_window [class="Spotify"] resize set 1000 700
+for_window [class="Spotify"] move scratchpad
+for_window [class="Spotify"] border pixel 2
 
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
