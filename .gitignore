@@ -8,9 +8,11 @@
 .config/mpd/log
 .config/mpd/state
 .config/mpd/sticker.sql
+.config/plantuml/plantuml.jar
 .config/pulse/
 .config/spotify/
 .gnupg/
+.java/
 .local/share/
 .mozilla/*
 .ncmpcpp/
