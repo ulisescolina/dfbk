@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#Variables globales
+# @param $1 archivo con el codigo fuente
+# @param $2 nombre base del archivo, sin la extension
+archivo=$1
+base=$2
+
+# Este script reune lo necesario para la compilacion de diferentes archivos, con relacion,
+# en primera instancia, a los proyectos que involucran lo siguiente:
+# OpenMPI en C++
+# OpenMP en C
+
+# Compila codigo OpenMPI en C++ y lo ejecuta con la cantidad de recursos que se le soliciten
+compi() {\
+	txtcpp=$(sed 10q "$archivo")
+	if [[ $txtcpp =~ (NUM_HILOS=)([0-9]) ]]; then nhilos=${BASH_REMATCH[2]}; else nhilos=1; fi
+	echo && echo
+	echo "Compilando el archivo hacia: $base"
+	mpicxx "$archivo" -o "$base"
+	echo "Corriendo $base con $nhilos hilo(s)"
+	echo "============ Inicio Ejecucion ================="
+	mpirun -np "$nhilos" "$base"
+	echo "============== Fin Ejecucion==================="
+	}
+
+# Compila codigo OpenMP utilizando el compilador para C++, luego lo ejecuta
+comp(){
+	g++ -fopenmp "$archivo" -o "$base" && "$base"
+}
