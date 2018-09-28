@@ -52,7 +52,7 @@ exec --no-startup-id nm-applet
 # mpd startup
 exec --no-startup-id mpd
 # activacion de la variante con teclas muertas para teclado con layout US
-exec --no-startup-id setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
+#exec --no-startup-id setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000
