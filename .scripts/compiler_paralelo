@@ -24,7 +24,7 @@ compi() {\
 	fi
 	echo "Compilando el archivo hacia: $base"
 	mpicxx "$archivo" -o "$base"
-	echo "Corriendo $base con $nhilos hilo(s)"
+	echo "Corriendo $base con $nproc proceso(s)"
 	echo "============ Inicio Ejecucion ================="
 	mpirun -np "$nproc" "$base"
 	echo "============== Fin Ejecucion==================="
