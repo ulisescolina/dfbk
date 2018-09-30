@@ -13,14 +13,20 @@ base=$2
 
 # Compila codigo OpenMPI en C++ y lo ejecuta con la cantidad de recursos que se le soliciten
 compi() {\
-	txtcpp=$(sed 10q "$archivo")
-	if [[ $txtcpp =~ (NUM_HILOS=)([0-9]) ]]; then nhilos=${BASH_REMATCH[2]}; else nhilos=1; fi
 	echo && echo
+	txtcpp=$(sed 10q "$archivo")
+	if [[ $txtcpp =~ (NUM_PROC=)([0-9]+) ]];
+	then
+		nproc=${BASH_REMATCH[2]};
+	else
+		echo "No se encontro la expresion que indica la cantidad de procesos a solicitar para la ejecucion"
+		nproc=1;
+	fi
 	echo "Compilando el archivo hacia: $base"
 	mpicxx "$archivo" -o "$base"
 	echo "Corriendo $base con $nhilos hilo(s)"
 	echo "============ Inicio Ejecucion ================="
-	mpirun -np "$nhilos" "$base"
+	mpirun -np "$nproc" "$base"
 	echo "============== Fin Ejecucion==================="
 	}
 
