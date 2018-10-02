@@ -1,6 +1,7 @@
 .cache/*
 .config/dconf/
 .config/firefox56/
+.config/gtk-3.0/
 .config/htop/
 .config/mpd/playlists/
 .config/mpd/pid
@@ -11,6 +12,7 @@
 .config/plantuml/plantuml.jar
 .config/pulse/
 .config/spotify/
+.extraibles/
 .gnupg/
 .java/
 .local/share/
@@ -18,6 +20,7 @@
 .ncmpcpp/
 .pki/
 .tmp/
+.vim/.netrwhist
 Documentos/
 Descargas/
 Downloads/
