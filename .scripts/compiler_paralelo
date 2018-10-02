@@ -5,6 +5,7 @@
 # @param $2 nombre base del archivo, sin la extension
 archivo=$1
 base=$2
+host="/etc/hostname"
 
 # Este script reune lo necesario para la compilacion de diferentes archivos, con relacion,
 # en primera instancia, a los proyectos que involucran lo siguiente:
@@ -26,7 +27,7 @@ compi() {\
 	mpicxx "$archivo" -o "$base"
 	echo "Corriendo $base con $nproc proceso(s)"
 	echo "============ Inicio Ejecucion ================="
-	mpirun -np "$nproc" "$base"
+	mpirun --oversubscribe -np "$nproc" "$base"
 	echo "============== Fin Ejecucion==================="
 	}
 
