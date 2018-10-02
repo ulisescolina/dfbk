@@ -4,7 +4,7 @@
 "  \ V /| | | | | | | | | (__
 "   \_/ |_|_| |_| |_|_|  \___|
 
-let mapleader =" "
+	let mapleader =" "
 " Load Pathogen for plugins:
 	execute pathogen#infect()
 	execute pathogen#helptags()
@@ -52,8 +52,8 @@ let mapleader =" "
 	map <leader>c :!compiler <c-r>%<CR>
 
 "For saving view folds:
-	"au BufWinLeave * mkview
-	"au BufWinEnter * silent loadview
+"au BufWinLeave * mkview
+"au BufWinEnter * silent loadview
 
 " Interpret .md files, etc. as .markdown
 	let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
@@ -94,11 +94,11 @@ let mapleader =" "
 	inoremap <F10> <esc>:Goyo<CR>a
 
 " Toggle Prose Mode with F8:
-    so ~/.vim/luke/prose.vim
-    nm <F8> :call ToggleProse()<CR>
+	so ~/.vim/luke/prose.vim
+	nm <F8> :call ToggleProse()<CR>
 
 " Enable Goyo by default for mutt writting
-	" Goyo's width will be the line limit in mutt.
+" Goyo's width will be the line limit in mutt.
 	autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
 	autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
 
@@ -130,20 +130,23 @@ let mapleader =" "
 	inoremap jw <Esc>
 	inoremap wj <Esc>
 
- "____        _                  _
+" ____        _                  _
 "/ ___| _ __ (_)_ __  _ __   ___| |_ ___
 "\___ \| '_ \| | '_ \| '_ \ / _ \ __/ __|
- "___) | | | | | |_) | |_) |  __/ |_\__ \
+" ___) | | | | | |_) | |_) |  __/ |_\__ \
 "|____/|_| |_|_| .__/| .__/ \___|\__|___/
-              "|_|   |_|
+"              |_|   |_|
 
 """LATEX
-	" Word count:
+" Word count:
 	autocmd FileType tex map <F3> :w !detex \| wc -w<CR>
 	autocmd FileType tex inoremap <F3> <Esc>:w !detex \| wc -w<CR>
-	" Compile document using xelatex:
+" Compile document using xelatex:
 	autocmd FileType tex inoremap <F5> <Esc>:!xelatex<space><c-r>%<Enter>a
 	autocmd FileType tex nnoremap <F5> :!xelatex<space><c-r>%<Enter>
+	" Compile document with --shell-escape
+	autocmd FileType tex inoremap <F4> <Esc>:!xelatex<space>--shell-escape<space><c-r>%<Enter>a
+	autocmd FileType tex nnoremap <F4> :!xelatex<space>--shell-escape<space><c-r>%<Enter>
 	" Code snippets
 	autocmd FileType tex inoremap ,fr \begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
 	autocmd FileType tex inoremap ,fi \begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
@@ -180,7 +183,7 @@ let mapleader =" "
 	autocmd FileType tex inoremap ,nu $\varnothing$
 	autocmd FileType tex inoremap ,col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 	autocmd FileType tex inoremap ,rn (\ref{})<++><Esc>F}i
-	autocmd FileType tex inoremap ,fig \begin{figure}[H]<Enter><Space><Space>\centering<Enter><Space><Space>\includegraphics[width=.4\linewidth]{<++>}<Enter><Space><Space>\caption{<++>}<Enter><Space><Space>\label{<++>}<Enter>\end{figure}<Esc>kkkkki<Space><Tab>
+	autocmd FileType tex inoremap ,fig \begin{figure}[H]<Enter><Space><Space>\centering<Enter><Space><Space>\includegraphics[width=.4\linewidth]{<++>}<Enter><Space><Space>\caption{<++>}<Enter><Space><Space>\label{<++>}<Enter>\end{figure}<Esc>kkkkk<Space><Tab>
 
 """PHP/HTML
 	autocmd FileType php,html inoremap ,b <b></b><Space><++><Esc>FbT>i
