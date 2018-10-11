@@ -46,7 +46,7 @@ alias yt="youtube-dl --add-metadata -ic" # Download video link
 alias yta="youtube-dl --add-metadata -xic" # Download only audio
 alias YT="youtube-viewer"
 alias ethspeed="speedometer -r enp0s25"
-alias wifispeed="speedometer -r wlp3s0"
+alias wifispeed="speedometer -r wlp8s0"
 alias starwars="telnet towel.blinkenlights.nl"
 
 # TeX
