@@ -29,6 +29,7 @@ set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
+set $wnetiface wlp8s0
 
 # #---Starting External Scripts---# #
 # Setting the background and colorscheme:
@@ -298,6 +299,16 @@ for_window [class="Spotify"] resize set 1000 700
 for_window [class="Spotify"] move scratchpad
 for_window [class="Spotify"] border pixel 2
 
+# Ventana flotante para velocidad WiFi
+# asignado a $mod+Shift+<F12>.
+for_window [instance="wifispeed"] floating enable
+for_window [instance="wifispeed"] resize set 500 150
+for_window [instance="wifispeed"] move scratchpad
+for_window [instance="wifispeed"] border pixel 2
+for_window [title="wifispeed"] border pixel 0
+no_focus[instance="wifispeed"]
+exec --no-startup-id $term -n wifispeed -e speedometer -r $wnetiface
+
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
 for_window [title="mpvfloat"] sticky enable
@@ -317,6 +328,7 @@ bindsym $mod+F9		exec --no-startup-id dmenumount
 bindsym $mod+F10	exec --no-startup-id dmenuumount
 bindsym $mod+F11	exec --no-startup-id dmenuarchwiki
 bindsym $mod+F12	exec $term -e sudo -A wifi-menu
+bindsym $mod+Shift+F12	[instance="wifispeed"] scratchpad show; [instance="wifispeed"] move right 745px, move up 330px
 
 # #---Arrow Keys---# #
 bindsym $mod+Left		focus left
