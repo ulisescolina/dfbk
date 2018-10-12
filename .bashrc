@@ -24,6 +24,7 @@ alias psref="gpg-connect-agent RELOADAGENT /bye" # Refresh gpg
 alias p="sudo pacman"
 alias SS="sudo systemctl"
 alias v="vim"
+alias vd="vimdev"
 alias sv="sudo vim"
 alias r="ranger"
 alias sr="sudo ranger"
@@ -58,4 +59,5 @@ alias TC='texclear'
 
 source ~/.shortcuts
 
+vimdev(){ docker run -it -v "$(pwd)":/home/developer/workspace jare/vim-bundle; }
 shdl() { curl -O $(curl -s http://sci-hub.tw/"$@" | grep location.href | grep -o http.*pdf) ;}
