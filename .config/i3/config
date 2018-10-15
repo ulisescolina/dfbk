@@ -33,7 +33,8 @@ set $wnetiface wlp8s0
 
 # #---Starting External Scripts---# #
 # Setting the background and colorscheme:
-exec_always --no-startup-id wal -i ~/.config/wall.png
+# exec_always --no-startup-id wal -i ~/.config/wall.png
+exec_always --no-startup-id ~/.fehbg
 # Starts dunst for notifications:
 exec --no-startup-id dunst
 # Torrent daemon:
@@ -88,7 +89,7 @@ bar {
 			statusline $darkwhite
 			separator $cyan
 			focused_workspace  $blue $darkblue $darkblack
-        		active_workspace   $blue $blue $darkwhite
+        		active_workspace   $blue $blue $white
       			inactive_workspace $darkblack $darkblack $white
         		urgent_workspace   $darkblack $darkblack $white
 		}
@@ -305,8 +306,6 @@ for_window [instance="wifispeed"] floating enable
 for_window [instance="wifispeed"] resize set 500 150
 for_window [instance="wifispeed"] move scratchpad
 for_window [instance="wifispeed"] border pixel 2
-for_window [title="wifispeed"] border pixel 0
-no_focus[instance="wifispeed"]
 exec --no-startup-id $term -n wifispeed -e speedometer -r $wnetiface
 
 # Bindings to make the webcam float and stick.
