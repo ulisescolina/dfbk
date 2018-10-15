@@ -59,5 +59,5 @@ alias TC='texclear'
 
 source ~/.shortcuts
 
-vimdev(){ docker run -it -v "$(pwd)":/home/developer/workspace jare/vim-bundle; }
+vimdev(){ docker run --rm -it -v "$(pwd)":/home/developer/workspace jare/vim-bundle; }
 shdl() { curl -O $(curl -s http://sci-hub.tw/"$@" | grep location.href | grep -o http.*pdf) ;}
