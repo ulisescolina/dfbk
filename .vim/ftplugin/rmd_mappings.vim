@@ -1,5 +1,7 @@
 " Lang: Rmarkdown
 " Tabulaciones
+set autoindent
+set cindent
 setlocal shiftwidth=2
 setlocal tabstop=2
 " ____        _                  _
