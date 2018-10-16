@@ -1,12 +1,19 @@
 # You can add comments to these files with #
-h	~/
-d	~/Documentos
-D	~/Descargas
-m	~/Musica
-pp	~/Pictures
-vv	~/Videos
+hh	~/
+he	~/.extraibles # Ubicacion de dispositivos extraibles
 s	~/.scripts
 cf	~/.config
-usb	/extraibles # Ubicacion de dispositivos extraibles
-F	~/Documentos/Facultad/ # Ubicacion de doc Facultad
-MTx	~/Documentos/Manuales/LaTeX/ # Manuales TeX
+dd	~/Documentos
+da	~/Documentos/Articulos/
+df	~/Documentos/Facultad/ # Ubicacion de doc Facultad
+dg	~/Documentos/GitHub/
+dl	~/Documentos/LaTeX/
+dml	~/Documentos/Manuales/LaTeX/ # Manuales TeX
+D	~/Descargas
+pp	~/Imagenes
+pw	~/Imagenes/Wallpapers
+ps	~/Imagenes/Screenshots
+m	~/Musica
+pL	~/Plantillas/LaTeX/
+vv	~/Videos
+
