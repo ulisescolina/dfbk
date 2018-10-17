@@ -50,7 +50,7 @@ interval=5
 
 [time]
 label=📅
-command=echo $(date '+%Y %b %d (%a)  %I:%M%p') 🕓
+command=echo $(date '+%Y %b %d (%a)  %H:%M%p') 🕓
 interval=30
 
 [wifi]
