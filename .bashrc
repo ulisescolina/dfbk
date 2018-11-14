@@ -19,6 +19,7 @@ alias pI="pacman -Q --info" # informacion acerca de un paquete
 alias espacio="ncdu" # informacion acerca de espacio en un directorio
 alias sdn="sudo shutdown now"
 alias psref="gpg-connect-agent RELOADAGENT /bye" # Refresh gpg
+alias actualizarmirrorlist="rfshmirror"
 
 # Some aliases
 alias p="sudo pacman"
@@ -60,4 +61,10 @@ alias TC='texclear'
 source ~/.shortcuts
 
 vimdev(){ docker run --rm -it -v "$(pwd)":/home/developer/workspace jare/vim-bundle; }
+rfshmirror() {
+	cant_mirrorlist=5
+	if [ -n "$1" ]; then
+		cant_mirrorlist=$1;
+	fi
+	sudo reflector --verbose --latest "$cant_mirrorlist" --sort rate --save /etc/pacman.d/mirrorlist; }
 shdl() { curl -O $(curl -s http://sci-hub.tw/"$@" | grep location.href | grep -o http.*pdf) ;}
