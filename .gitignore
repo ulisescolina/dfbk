@@ -1,8 +1,11 @@
-.cache/*
+.cache/
+.calcurse/
 .config/dconf/
 .config/firefox56/
+.config/gconf/
 .config/gtk-3.0/
 .config/htop/
+.config/Mendeley Ltd./
 .config/mpd/playlists/
 .config/mpd/pid
 .config/mpd/database
@@ -11,16 +14,25 @@
 .config/mpd/sticker.sql
 .config/plantuml/plantuml.jar
 .config/pulse/
+.config/QtProject.conf
 .config/spotify/
+.config/transmission/
+.config/youtube-viewer/
+.config/wall.png
 .extraibles/
+.fehbg
+.fontconfig/
+.ghc/
 .gnupg/
 .java/
 .local/share/
 .mozilla/*
+.mplayer/
 .ncmpcpp/
 .pki/
 .tmp/
 .vim/.netrwhist
+Docker/
 Documentos/
 Descargas/
 Downloads/
@@ -31,7 +43,8 @@ Plantillas/
 .bash_history
 .lesshst
 .viminfo
-.python_history*
+.*_history*
+.sc-im*
 .weatherreport
 
 
