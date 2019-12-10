@@ -19,7 +19,7 @@
 
 # #---Basic Definitions---# #
 # Needed for i3-gaps
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 2
 gaps inner 15
 gaps outer 15
 set $term --no-startup-id $TERMINAL
@@ -38,7 +38,7 @@ exec_always --no-startup-id ~/.fehbg
 # Starts dunst for notifications:
 exec --no-startup-id dunst
 # Torrent daemon:
-#exec --no-startup-id transmission-daemon
+exec --no-startup-id transmission-daemon
 # Composite manager:
 exec --no-startup-id compton
 # Runs the key remapping scripts
@@ -53,6 +53,8 @@ exec --no-startup-id rm -f ~/.larbs/.recording
 exec --no-startup-id nm-applet
 # mpd startup
 exec --no-startup-id mpd
+# setting up colors and font throug xrdb
+exec_always --no-startup-id xrdb ~/.Xresources
 # activacion de la variante con teclas muertas para teclado con layout US
 #exec --no-startup-id setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
 
@@ -75,24 +77,27 @@ set_from_resource $darkwhite	color7  #000000
 set_from_resource $white	color15 #000000
 set $transparent		#00000000
 
-#                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
-client.focused		$red		$red		$magenta	$darkmagenta		$darkblue
-client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
-client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
-client.urgent		$darkred	$darkred	$black		$darkred		$darkred
-client.background $black
+#                       BORDER		    BACKGROUND	TEXT		  INDICATOR     CHILD_BORDER
+client.focused		      $darkcyan		  $darkcyan   $magenta	$darkmagenta	$darkblue
+client.unfocused	      $transparent	$blue       $white		$darkblue     $darkblack
+client.focused_inactive	$transparent	$blue       $white		$darkblue     $darkblack
+client.urgent		        $darkred	    $darkred    $black		$darkred      $darkred
+client.background       $black
 
 bar {
-	font pango:mono 11
+	#font pango:mono 11
+  #font pango: xos4 Terminess Powerline, Awesome 9
+  font pango:Roboto Mono for Powerline 9
+
 	colors {
-			background $darkblack
-			statusline $darkwhite
-			separator $cyan
-			focused_workspace  $blue $darkblue $darkblack
-        		active_workspace   $blue $blue $white
-      			inactive_workspace $darkblack $darkblack $white
-        		urgent_workspace   $darkblack $darkblack $white
-		}
+    background $transparent
+    statusline $darkwhite
+    separator $cyan
+    focused_workspace  $darkwhite $transparent $darkwhite
+    active_workspace   $blue $blue $darkwhite
+    inactive_workspace $transparent $transparent $darkwhite
+    urgent_workspace   $red $red $white
+  }
 	status_command i3blocks
 	position top
 	mode dock
@@ -122,8 +127,8 @@ bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec $truepause ; 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!math|dropdown|musica).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!math|dropdown|musica).*$"] kill
 
-bindsym $mod+w			exec --no-startup-id $BROWSER
-bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
+bindsym $mod+w					exec --no-startup-id $BROWSER -P URC
+bindsym $mod+Shift+w		exec --no-startup-id $BROWSER -P default
 
 bindsym $mod+e			exec $term -e neomutt
 bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
@@ -186,8 +191,8 @@ bindsym $mod+Shift+z		gaps outer current minus 5
 bindsym $mod+x			exec --no-startup-id lockscreen
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
-bindsym $mod+c			exec --no-startup-id camtoggle
-bindsym $mod+Shift+c		[class="Spotify"] scratchpad show; [class="Spotify"] move position center
+bindsym $mod+c			[class="Spotify"] scratchpad show; [class="Spotify"] move position center
+bindsym $mod+Shift+c		exec --no-startup-id camtoggle
 
 bindsym $mod+v			exec $term -e ncmpcpp -s visualizer
 bindsym $mod+Shift+v		exec --no-startup-id projectM-pulseaudio
@@ -306,7 +311,7 @@ for_window [instance="wifispeed"] floating enable
 for_window [instance="wifispeed"] resize set 500 150
 for_window [instance="wifispeed"] move scratchpad
 for_window [instance="wifispeed"] border pixel 2
-exec --no-startup-id $term -n wifispeed -e speedometer -r $wnetiface
+exec_always --no-startup-id $term -n wifispeed -e speedometer -r $wnetiface
 
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
@@ -326,8 +331,8 @@ bindsym $mod+F8		exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
 bindsym $mod+F9		exec --no-startup-id dmenumount
 bindsym $mod+F10	exec --no-startup-id dmenuumount
 bindsym $mod+F11	exec --no-startup-id dmenuarchwiki
-bindsym $mod+F12	exec $term -e sudo -A wifi-menu
-bindsym $mod+Shift+F12	[instance="wifispeed"] scratchpad show; [instance="wifispeed"] move right 745px, move up 330px
+bindsym $mod+F12  [instance="wifispeed"] scratchpad show; [instance="wifispeed"] move right 745px, move up 330px
+#bindsym $mod+Shift+F12
 
 # #---Arrow Keys---# #
 bindsym $mod+Left		focus left

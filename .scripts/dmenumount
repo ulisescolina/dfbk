@@ -28,19 +28,21 @@ mountandroid() { \
 	drives=$(simple-mtpfs -l)
 	chosen=$(echo "$drives" | dmenu -i -p "Which Android device?" | cut -d : -f 1)
 	getmount "$HOME -type d -maxdepth 3"
-	simple-mtpfs --device "$chosen" "$mp"
-	echo simple-mtpfs --device "$chosen" "$mp"
+	simple-mtpfs --device "$chosen" "$mp" && pgrep -x dunst && notify-send "$chosen montado en $mp."
 	}
 
-asktype() { \
-	case $(printf "USB\\nAndroid" | dmenu -i -p "Mount a USB drive or Android device?") in
+mountftp() {
+	chosen=$(echo "" | dmenu -i -p "Dirección del servidor FTP")
+	getmount "$HOME -type d -maxdepth 5"
+	curlftpfs "ftp://$chosen" "$mp" && pgrep -x dunst && notify-send "$ftpdir monatado en $mp"
+}
+
+inicio(){
+	case $(echo -e "USB\\nFTP\\nAndroid" | dmenu -i -p "Mount a USB drive, FTP server or Android device?") in
 		USB) mountusb ;;
 		Android) mountandroid ;;
+		FTP) mountftp ;;
 	esac
-	}
+}
 
-if simple-mtpfs -l; then
-	asktype
-else
-	mountusb
-fi
+inicio

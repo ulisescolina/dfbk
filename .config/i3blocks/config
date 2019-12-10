@@ -24,15 +24,9 @@ command=i3torrent
 interval=20
 signal=7
 
-#[weather]
-#command=i3weather
-#interval=3600
-
-[mail]
-label=📬
-command=i3mail
-interval=180
-signal=12
+[weather]
+command=i3weather
+interval=3600
 
 [volume]
 interval=once
@@ -41,7 +35,7 @@ signal=10
 
 [iface]
 label=🌐
-#instance=wlan0
+instance=wlp8s0
 interval=10
 
 [battery]

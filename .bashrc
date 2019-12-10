@@ -3,11 +3,12 @@ shopt -s autocd #Allows you to cd into directory merely by typing the directory 
 HISTSIZE= HISTFILESIZE=
 
 # Setting Bash prompt. Capitalizes username and host if root user (my root user uses this same config file).
-if [ "$EUID" -ne 0 ]
-	then export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-	else export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]ROOT\[$(tput setaf 2)\]@\[$(tput setaf 4)\]$(hostname | awk '{print toupper($0)}') \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+if [[ $EUID -ne 0 ]];
+  #then export PS1="\[\e[0;34m\]┌─[\[\e[1;36m\u\e[0;34m\]]─[\e[1;37m\w\e[0;34m]: \$\[\e[0;34m\]\n\[\e[0;34m\]└────╼\[\e[0;31m\]>> \[\e[m\]"
+  then export PS1="\n\[$(tput sgr0)\]\[\033[38;5;208m\][\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;33m\]\w\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;202m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]\n \[$(tput sgr0)\]\[\033[38;5;200m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;34m\]>>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+  #then export PS1="\e[3${HOSTCOLOR}m \h  \e[3${USERCOLOR}m \u  \e[3${PATHCOLOR}m \w  \n";
+	#else export PS1="\n\[$(tput sgr0)\]\[\033[38;5;208m\][\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;33m\]\W\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;202m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]\n \[$(tput sgr0)\]\[\033[38;5;200m\]\A\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;34m\]>>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 fi
-
 export GPG_TTY=$(tty)
 
 # System Maintainence
@@ -25,7 +26,6 @@ alias actualizarmirrorlist="rfshmirror"
 alias p="sudo pacman"
 alias SS="sudo systemctl"
 alias v="vim"
-alias vd="vimdev"
 alias sv="sudo vim"
 alias r="ranger"
 alias sr="sudo ranger"
@@ -52,7 +52,7 @@ alias wifispeed="speedometer -r wlp8s0"
 alias starwars="telnet towel.blinkenlights.nl"
 
 # TeX
-alias Txa="cp ~/Plantillas/LaTeX/article.tex"
+alias Txa="cp ~/Plantillas/LaTeX/Articulo/*"
 alias TxIEEE1="cp -r ~/Plantillas/LaTeX/IEEEArticle/*"
 alias TxIEEE2="cp -r ~/Plantillas/LaTeX/IEEEJrnl/*"
 alias Txs="cp ~/Plantillas/LaTeX/beamer.tex"
@@ -60,11 +60,13 @@ alias TC='texclear'
 
 source ~/.shortcuts
 
-vimdev(){ docker run --rm -it -v "$(pwd)":/home/developer/workspace jare/vim-bundle; }
+# NPM config
+source ~/.scripts/npm-config
+
 rfshmirror() {
 	cant_mirrorlist=5
 	if [ -n "$1" ]; then
 		cant_mirrorlist=$1;
 	fi
-	sudo reflector --verbose --latest "$cant_mirrorlist" --sort rate --save /etc/pacman.d/mirrorlist; }
+	sudo reflector --verbose -p http -p ftp --latest "$cant_mirrorlist" --sort rate --save /etc/pacman.d/mirrorlist; }
 shdl() { curl -O $(curl -s http://sci-hub.tw/"$@" | grep location.href | grep -o http.*pdf) ;}

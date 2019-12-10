@@ -10,7 +10,10 @@ application/x-extension-shtml=userapp-Firefox-L5HJ0Y.desktop
 application/xhtml+xml=userapp-Firefox-L5HJ0Y.desktop
 application/x-extension-xhtml=userapp-Firefox-L5HJ0Y.desktop
 application/x-extension-xht=userapp-Firefox-L5HJ0Y.desktop
-application/pdf=mupdf.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+image/png=feh.desktop
+image/jpeg=feh.desktop
+text/markdown=gvim.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-L5HJ0Y.desktop;
@@ -24,3 +27,7 @@ application/x-extension-shtml=userapp-Firefox-L5HJ0Y.desktop;
 application/xhtml+xml=userapp-Firefox-L5HJ0Y.desktop;
 application/x-extension-xhtml=userapp-Firefox-L5HJ0Y.desktop;
 application/x-extension-xht=userapp-Firefox-L5HJ0Y.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/png=feh.desktop;
+image/jpeg=feh.desktop;
+text/markdown=vim.desktop;gvim.desktop;

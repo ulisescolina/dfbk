@@ -23,3 +23,5 @@ fi
 sudo -n loadkeys ~/.scripts/ttymaps.kmap 2>/dev/null
 # wal -Rn
 
+# Cargar .Xresources
+xrdb ~/.Xresources

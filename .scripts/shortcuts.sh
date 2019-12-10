@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Shell rc file (i.e. bash vs. zsh, etc.)
 shellrc="$HOME/.bashrc"
